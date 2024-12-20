@@ -1,0 +1,253 @@
+General Styles 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.8;
+    /* background-color: lightblue; */
+    transition: .5s;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    font-size: 40px;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 50px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* margin-left: 10px; */
+    font-size: 1.8rem;
+}
+
+header nav ul {
+    float: right;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #f7941d;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://cdn.shopify.com/s/files/1/0268/4682/2569/files/best_workout_for_muscle_gain_1024x1024.jpg?v=1718815928');
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: #f7941d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #e7830c;
+}
+
+/* Services Section */
+.services {
+    display: flex;
+    background: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0;
+    text-align: center;
+    height: 90vh;
+}
+
+.services h2 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service-item {
+    /* font-size: 20px; */
+    background: url('https://cdn.muscleandstrength.com/sites/default/files/forget_steroids_-_1200x630.jpg');
+    color: #fff;
+    padding: 20px;
+    height: 200px;
+    border-radius: 5px;
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.service-item h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 15px;
+
+    margin-bottom: 10px;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+/* About Section */
+.about {
+    background: url('https://img.pikbest.com/ai/illus_our/20230412/202dd82a2f10de25c5a602a69ad83e21.png!w700wp') no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0 auto;
+    background-size: cover;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.about-info {
+    display: block;
+    width: 500px;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 40px;
+    color: #333;
+    padding: 10px 50px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+#contact {
+    height: 90vh;
+    margin: 0 auto;
+}
+
+.contact {
+    background-color: #f7941d;
+    padding: 50px 0;
+    background: #fff;
+    text-align: center;
+}
+
+.login-details h2 {
+    font-size: 35px;
+}
+
+.login-details p {
+    font-size: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 500px;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    width: 500px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background: url('https://cdn.muscleandstrength.com/sites/default/files/forget_steroids_-_1200x630.jpg');
+    color: #fff;
+    padding: 10px 0;
+}
+
+.copyright {
+    font-size: 25px;
+    text-align: center;
+}
